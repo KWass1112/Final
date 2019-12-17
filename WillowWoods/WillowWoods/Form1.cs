@@ -16,5 +16,15 @@ namespace WillowWoods
         {
             InitializeComponent();
         }
+
+        private void welcomebtm_Click(object sender, EventArgs e)
+        {
+            Form2 f2 = new Form2();
+            this.Hide();
+            f2.FormClosed += (s, args) => this.Close();
+            f2.Show();
+            f2.Focus();
+            
+        }
     }
 }
