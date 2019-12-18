@@ -106,5 +106,8 @@
   <ItemGroup>
     <None Include="Resources\a3ae7d6597ebf70fe9d67fa9f0994480.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\depositphotos_207816054-stock-video-halloween-spooky-moon-night-landscape.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

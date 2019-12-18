@@ -83,6 +83,16 @@ namespace WillowWoods.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap depositphotos_207816054_stock_video_halloween_spooky_moon_night_landscape {
+            get {
+                object obj = ResourceManager.GetObject("depositphotos_207816054-stock-video-halloween-spooky-moon-night-landscape", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap maxresdefault {
             get {
                 object obj = ResourceManager.GetObject("maxresdefault", resourceCulture);

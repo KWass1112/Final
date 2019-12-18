@@ -28,20 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.intronamelbl = new System.Windows.Forms.Label();
             this.SuspendLayout();
+            // 
+            // intronamelbl
+            // 
+            this.intronamelbl.AutoSize = true;
+            this.intronamelbl.BackColor = System.Drawing.Color.White;
+            this.intronamelbl.Location = new System.Drawing.Point(191, 203);
+            this.intronamelbl.Name = "intronamelbl";
+            this.intronamelbl.Size = new System.Drawing.Size(38, 13);
+            this.intronamelbl.TabIndex = 0;
+            this.intronamelbl.Text = "label 1";
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(679, 460);
+            this.Controls.Add(this.intronamelbl);
             this.Name = "Form2";
-            this.Text = "Form2";
+            this.Text = "Title page";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Label intronamelbl;
     }
 }

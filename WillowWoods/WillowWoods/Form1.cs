@@ -17,14 +17,28 @@ namespace WillowWoods
             InitializeComponent();
         }
 
-        private void welcomebtm_Click(object sender, EventArgs e)
+        private void nextbtn_Click(object sender, EventArgs e)
+        {
+            storypart1lbl.Visible = false;
+            storybodylbl.Visible = true;  
+            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            storybodylbl.Visible = false;
+            namelbl.Visible = true; 
+        }
+
+        private void continuebtn_Click(object sender, EventArgs e)
         {
             Form2 f2 = new Form2();
             this.Hide();
             f2.FormClosed += (s, args) => this.Close();
             f2.Show();
             f2.Focus();
-            
         }
+
+       
     }
 }
