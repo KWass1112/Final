@@ -99,7 +99,7 @@
             // next2btn
             // 
             this.next2btn.Font = new System.Drawing.Font("Engravers MT", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.next2btn.Location = new System.Drawing.Point(256, 328);
+            this.next2btn.Location = new System.Drawing.Point(256, 331);
             this.next2btn.Name = "next2btn";
             this.next2btn.Size = new System.Drawing.Size(95, 24);
             this.next2btn.TabIndex = 10;
