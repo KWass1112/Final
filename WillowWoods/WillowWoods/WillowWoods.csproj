@@ -106,5 +106,20 @@
   <ItemGroup>
     <None Include="Resources\a3ae7d6597ebf70fe9d67fa9f0994480.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\depositphotos_207816054-stock-video-halloween-spooky-moon-night-landscape.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d629niv-9aeef292-3db0-40b7-a49f-21ef4370006a.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d629niv-9aeef292-3db0-40b7-a49f-21ef4370006a1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %284%29.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\284011701049211.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
