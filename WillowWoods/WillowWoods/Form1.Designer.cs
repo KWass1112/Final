@@ -34,7 +34,7 @@
             this.storybodylbl = new System.Windows.Forms.Label();
             this.storypart1lbl = new System.Windows.Forms.Label();
             this.nextbtn = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.next2btn = new System.Windows.Forms.Button();
             this.namelbl = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -52,12 +52,13 @@
             // continuebtn
             // 
             this.continuebtn.Font = new System.Drawing.Font("Engravers MT", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.continuebtn.Location = new System.Drawing.Point(191, 388);
+            this.continuebtn.Location = new System.Drawing.Point(191, 370);
             this.continuebtn.Name = "continuebtn";
             this.continuebtn.Size = new System.Drawing.Size(228, 23);
             this.continuebtn.TabIndex = 9;
             this.continuebtn.Text = "Click me to continue";
             this.continuebtn.UseVisualStyleBackColor = true;
+            this.continuebtn.Visible = false;
             this.continuebtn.Click += new System.EventHandler(this.continuebtn_Click);
             // 
             // storybodylbl
@@ -95,16 +96,17 @@
             this.nextbtn.UseVisualStyleBackColor = true;
             this.nextbtn.Click += new System.EventHandler(this.nextbtn_Click);
             // 
-            // button1
+            // next2btn
             // 
-            this.button1.Font = new System.Drawing.Font("Engravers MT", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(256, 358);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(95, 24);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "Next";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.next2btn.Font = new System.Drawing.Font("Engravers MT", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.next2btn.Location = new System.Drawing.Point(256, 328);
+            this.next2btn.Name = "next2btn";
+            this.next2btn.Size = new System.Drawing.Size(95, 24);
+            this.next2btn.TabIndex = 10;
+            this.next2btn.Text = "Next";
+            this.next2btn.UseVisualStyleBackColor = true;
+            this.next2btn.Visible = false;
+            this.next2btn.Click += new System.EventHandler(this.button1_Click);
             // 
             // namelbl
             // 
@@ -123,11 +125,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::WillowWoods.Properties.Resources.depositphotos_207816054_stock_video_halloween_spooky_moon_night_landscape;
+            this.BackgroundImage = global::WillowWoods.Properties.Resources.d629niv_9aeef292_3db0_40b7_a49f_21ef4370006a;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(614, 460);
             this.Controls.Add(this.namelbl);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.next2btn);
             this.Controls.Add(this.continuebtn);
             this.Controls.Add(this.storybodylbl);
             this.Controls.Add(this.storypart1lbl);
@@ -147,7 +149,7 @@
         private System.Windows.Forms.Label storybodylbl;
         private System.Windows.Forms.Label storypart1lbl;
         private System.Windows.Forms.Button nextbtn;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button next2btn;
         private System.Windows.Forms.Label namelbl;
     }
 }
