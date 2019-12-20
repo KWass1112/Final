@@ -17,22 +17,7 @@ namespace WillowWoods
             InitializeComponent();
         }
 
-        private void nextbtn_Click(object sender, EventArgs e)
-        {
-            storypart1lbl.Visible = false;
-            storybodylbl.Visible = true;
-            next2btn.Visible = true;
-            
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            nextbtn.Visible = false;
-            storybodylbl.Visible = false;
-            namelbl.Visible = true; 
-            continuebtn.Visible = true;
-
-        }
+       
 
         private void continuebtn_Click(object sender, EventArgs e)
         {
