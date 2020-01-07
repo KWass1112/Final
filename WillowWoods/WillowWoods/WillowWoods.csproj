@@ -121,5 +121,8 @@
   <ItemGroup>
     <None Include="Resources\284011701049211.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Working-With-Hexels-for-Drawing-Tiled-Pixel-Art.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -139,5 +139,15 @@ namespace WillowWoods.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Working_With_Hexels_for_Drawing_Tiled_Pixel_Art {
+            get {
+                object obj = ResourceManager.GetObject("Working-With-Hexels-for-Drawing-Tiled-Pixel-Art", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
