@@ -34,6 +34,18 @@
             this.IntroPanel = new System.Windows.Forms.Panel();
             this.mazePanel = new System.Windows.Forms.Panel();
             this.swordPanel = new System.Windows.Forms.Panel();
+            this.Monsterpanel = new System.Windows.Forms.Panel();
+            this.monsterContinuebtn = new System.Windows.Forms.Button();
+            this.wispHitMisslbl = new System.Windows.Forms.Label();
+            this.wispMisslbl = new System.Windows.Forms.Label();
+            this.wispHit2lbl = new System.Windows.Forms.Label();
+            this.wispHit1lbl = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.wispInstructionlbl = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.monsterPic = new System.Windows.Forms.PictureBox();
+            this.swordpic = new System.Windows.Forms.PictureBox();
+            this.continueSwordbtn = new System.Windows.Forms.Button();
             this.pickUpbtn = new System.Windows.Forms.Button();
             this.nextsword2btn = new System.Windows.Forms.Button();
             this.next1btn = new System.Windows.Forms.Button();
@@ -42,8 +54,8 @@
             this.wispDialog1lbl = new System.Windows.Forms.Label();
             this.youDialogTwolbl = new System.Windows.Forms.Label();
             this.youDialog1lbl = new System.Windows.Forms.Label();
+            this.nextMazebtn = new System.Windows.Forms.Button();
             this.okbtn = new System.Windows.Forms.Button();
-            this.nextbtn = new System.Windows.Forms.Button();
             this.label42 = new System.Windows.Forms.Label();
             this.label41 = new System.Windows.Forms.Label();
             this.exitlbl = new System.Windows.Forms.Label();
@@ -106,16 +118,17 @@
             this.willowWoodslbl = new System.Windows.Forms.Label();
             this.next2btn = new System.Windows.Forms.Button();
             this.firstNextbtn = new System.Windows.Forms.Button();
-            this.continueSwordbtn = new System.Windows.Forms.Button();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.storypanel.SuspendLayout();
             this.IntroPanel.SuspendLayout();
             this.mazePanel.SuspendLayout();
             this.swordPanel.SuspendLayout();
+            this.Monsterpanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.monsterPic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.swordpic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.wisppic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.willowwisppicbox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // Welcomelbl
@@ -150,6 +163,7 @@
             // IntroPanel
             // 
             this.IntroPanel.BackColor = System.Drawing.Color.Black;
+            this.IntroPanel.Controls.Add(this.Monsterpanel);
             this.IntroPanel.Controls.Add(this.mazePanel);
             this.IntroPanel.Controls.Add(this.next5btn);
             this.IntroPanel.Controls.Add(this.next4btn);
@@ -175,8 +189,8 @@
             this.mazePanel.BackgroundImage = global::WillowWoods.Properties.Resources.Working_With_Hexels_for_Drawing_Tiled_Pixel_Art;
             this.mazePanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.mazePanel.Controls.Add(this.swordPanel);
+            this.mazePanel.Controls.Add(this.nextMazebtn);
             this.mazePanel.Controls.Add(this.okbtn);
-            this.mazePanel.Controls.Add(this.nextbtn);
             this.mazePanel.Controls.Add(this.label42);
             this.mazePanel.Controls.Add(this.label41);
             this.mazePanel.Controls.Add(this.exitlbl);
@@ -220,16 +234,16 @@
             this.mazePanel.Controls.Add(this.label1);
             this.mazePanel.Controls.Add(this.wispDialoglbl);
             this.mazePanel.Controls.Add(this.pictureBox2);
-            this.mazePanel.Location = new System.Drawing.Point(48, 12);
+            this.mazePanel.Location = new System.Drawing.Point(33, 12);
             this.mazePanel.Name = "mazePanel";
-            this.mazePanel.Size = new System.Drawing.Size(741, 427);
+            this.mazePanel.Size = new System.Drawing.Size(767, 427);
             this.mazePanel.TabIndex = 28;
             this.mazePanel.Visible = false;
             // 
             // swordPanel
             // 
             this.swordPanel.AutoSize = true;
-            this.swordPanel.Controls.Add(this.pictureBox3);
+            this.swordPanel.Controls.Add(this.swordpic);
             this.swordPanel.Controls.Add(this.continueSwordbtn);
             this.swordPanel.Controls.Add(this.pickUpbtn);
             this.swordPanel.Controls.Add(this.nextsword2btn);
@@ -242,13 +256,166 @@
             this.swordPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.swordPanel.Location = new System.Drawing.Point(0, 0);
             this.swordPanel.Name = "swordPanel";
-            this.swordPanel.Size = new System.Drawing.Size(739, 425);
+            this.swordPanel.Size = new System.Drawing.Size(765, 425);
             this.swordPanel.TabIndex = 67;
+            this.swordPanel.Visible = false;
+            // 
+            // Monsterpanel
+            // 
+            this.Monsterpanel.BackgroundImage = global::WillowWoods.Properties.Resources.lucy_linse_forest_3333;
+            this.Monsterpanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Monsterpanel.Controls.Add(this.monsterContinuebtn);
+            this.Monsterpanel.Controls.Add(this.wispHitMisslbl);
+            this.Monsterpanel.Controls.Add(this.wispMisslbl);
+            this.Monsterpanel.Controls.Add(this.wispHit2lbl);
+            this.Monsterpanel.Controls.Add(this.wispHit1lbl);
+            this.Monsterpanel.Controls.Add(this.button1);
+            this.Monsterpanel.Controls.Add(this.wispInstructionlbl);
+            this.Monsterpanel.Controls.Add(this.pictureBox3);
+            this.Monsterpanel.Controls.Add(this.monsterPic);
+            this.Monsterpanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Monsterpanel.Location = new System.Drawing.Point(0, 0);
+            this.Monsterpanel.Name = "Monsterpanel";
+            this.Monsterpanel.Size = new System.Drawing.Size(827, 460);
+            this.Monsterpanel.TabIndex = 22;
+            this.Monsterpanel.Visible = false;
+            // 
+            // monsterContinuebtn
+            // 
+            this.monsterContinuebtn.Font = new System.Drawing.Font("Engravers MT", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.monsterContinuebtn.ForeColor = System.Drawing.Color.Black;
+            this.monsterContinuebtn.Location = new System.Drawing.Point(345, 210);
+            this.monsterContinuebtn.Name = "monsterContinuebtn";
+            this.monsterContinuebtn.Size = new System.Drawing.Size(164, 38);
+            this.monsterContinuebtn.TabIndex = 24;
+            this.monsterContinuebtn.Text = "Continue";
+            this.monsterContinuebtn.UseVisualStyleBackColor = true;
+            this.monsterContinuebtn.Visible = false;
+            // 
+            // wispHitMisslbl
+            // 
+            this.wispHitMisslbl.BackColor = System.Drawing.Color.Transparent;
+            this.wispHitMisslbl.Font = new System.Drawing.Font("Engravers MT", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.wispHitMisslbl.ForeColor = System.Drawing.Color.White;
+            this.wispHitMisslbl.Location = new System.Drawing.Point(179, 373);
+            this.wispHitMisslbl.Name = "wispHitMisslbl";
+            this.wispHitMisslbl.Size = new System.Drawing.Size(541, 69);
+            this.wispHitMisslbl.TabIndex = 23;
+            this.wispHitMisslbl.Text = "???:\r\n\r\nYou defeated the monster! Whew that was close!";
+            this.wispHitMisslbl.Visible = false;
+            // 
+            // wispMisslbl
+            // 
+            this.wispMisslbl.BackColor = System.Drawing.Color.Transparent;
+            this.wispMisslbl.Font = new System.Drawing.Font("Engravers MT", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.wispMisslbl.ForeColor = System.Drawing.Color.White;
+            this.wispMisslbl.Location = new System.Drawing.Point(179, 370);
+            this.wispMisslbl.Name = "wispMisslbl";
+            this.wispMisslbl.Size = new System.Drawing.Size(589, 74);
+            this.wispMisslbl.TabIndex = 22;
+            this.wispMisslbl.Text = "???:\r\n\r\nOh no! You missed! Quickly try hitting it again!\r\n";
+            this.wispMisslbl.Visible = false;
+            // 
+            // wispHit2lbl
+            // 
+            this.wispHit2lbl.BackColor = System.Drawing.Color.Transparent;
+            this.wispHit2lbl.Font = new System.Drawing.Font("Engravers MT", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.wispHit2lbl.ForeColor = System.Drawing.Color.White;
+            this.wispHit2lbl.Location = new System.Drawing.Point(177, 368);
+            this.wispHit2lbl.Name = "wispHit2lbl";
+            this.wispHit2lbl.Size = new System.Drawing.Size(591, 74);
+            this.wispHit2lbl.TabIndex = 21;
+            this.wispHit2lbl.Text = "???:\r\n\r\nWow you defeated the monster! Guess you are pretty strong!";
+            this.wispHit2lbl.Visible = false;
+            // 
+            // wispHit1lbl
+            // 
+            this.wispHit1lbl.BackColor = System.Drawing.Color.Transparent;
+            this.wispHit1lbl.Font = new System.Drawing.Font("Engravers MT", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.wispHit1lbl.ForeColor = System.Drawing.Color.Transparent;
+            this.wispHit1lbl.Location = new System.Drawing.Point(177, 365);
+            this.wispHit1lbl.Name = "wispHit1lbl";
+            this.wispHit1lbl.Size = new System.Drawing.Size(591, 82);
+            this.wispHit1lbl.TabIndex = 20;
+            this.wispHit1lbl.Text = "???:\r\n\r\nYou hit it! It looks like its wearing down. Try hitting it again to defea" +
+    "t it! ";
+            this.wispHit1lbl.Visible = false;
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Engravers MT", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(382, 342);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(87, 28);
+            this.button1.TabIndex = 19;
+            this.button1.Text = "Hit!";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // wispInstructionlbl
+            // 
+            this.wispInstructionlbl.BackColor = System.Drawing.Color.Transparent;
+            this.wispInstructionlbl.Font = new System.Drawing.Font("Engravers MT", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.wispInstructionlbl.ForeColor = System.Drawing.Color.White;
+            this.wispInstructionlbl.Location = new System.Drawing.Point(184, 368);
+            this.wispInstructionlbl.Name = "wispInstructionlbl";
+            this.wispInstructionlbl.Size = new System.Drawing.Size(613, 74);
+            this.wispInstructionlbl.TabIndex = 18;
+            this.wispInstructionlbl.Text = "???:\r\n\r\nOh no there\'s a monster! We can\'t run or hide, we have to fight! Click hi" +
+    "t to hit the monster \r\n\r\n\r\n";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox3.BackgroundImage = global::WillowWoods.Properties.Resources._284011701049211;
+            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox3.Location = new System.Drawing.Point(65, 351);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(102, 99);
+            this.pictureBox3.TabIndex = 17;
+            this.pictureBox3.TabStop = false;
+            // 
+            // monsterPic
+            // 
+            this.monsterPic.BackColor = System.Drawing.Color.Transparent;
+            this.monsterPic.BackgroundImage = global::WillowWoods.Properties.Resources.db9f5454d9253c360e83a01180a9762e;
+            this.monsterPic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.monsterPic.Cursor = System.Windows.Forms.Cursors.Default;
+            this.monsterPic.Location = new System.Drawing.Point(260, 64);
+            this.monsterPic.Name = "monsterPic";
+            this.monsterPic.Size = new System.Drawing.Size(316, 267);
+            this.monsterPic.TabIndex = 0;
+            this.monsterPic.TabStop = false;
+            // 
+            // swordpic
+            // 
+            this.swordpic.BackgroundImage = global::WillowWoods.Properties.Resources._37_374305_anime_sword_png_anime_sword_of_destiny;
+            this.swordpic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.swordpic.Location = new System.Drawing.Point(441, 86);
+            this.swordpic.Name = "swordpic";
+            this.swordpic.Size = new System.Drawing.Size(180, 227);
+            this.swordpic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.swordpic.TabIndex = 21;
+            this.swordpic.TabStop = false;
+            this.swordpic.Visible = false;
+            // 
+            // continueSwordbtn
+            // 
+            this.continueSwordbtn.Font = new System.Drawing.Font("Engravers MT", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.continueSwordbtn.Location = new System.Drawing.Point(299, 356);
+            this.continueSwordbtn.Name = "continueSwordbtn";
+            this.continueSwordbtn.Size = new System.Drawing.Size(134, 23);
+            this.continueSwordbtn.TabIndex = 20;
+            this.continueSwordbtn.Text = "Continue";
+            this.continueSwordbtn.UseVisualStyleBackColor = true;
+            this.continueSwordbtn.UseWaitCursor = true;
+            this.continueSwordbtn.Visible = false;
+            this.continueSwordbtn.Click += new System.EventHandler(this.continueSwordbtn_Click);
             // 
             // pickUpbtn
             // 
             this.pickUpbtn.Font = new System.Drawing.Font("Engravers MT", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pickUpbtn.Location = new System.Drawing.Point(287, 339);
+            this.pickUpbtn.Location = new System.Drawing.Point(299, 328);
             this.pickUpbtn.Name = "pickUpbtn";
             this.pickUpbtn.Size = new System.Drawing.Size(134, 22);
             this.pickUpbtn.TabIndex = 19;
@@ -260,7 +427,7 @@
             // nextsword2btn
             // 
             this.nextsword2btn.Font = new System.Drawing.Font("Engravers MT", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nextsword2btn.Location = new System.Drawing.Point(314, 308);
+            this.nextsword2btn.Location = new System.Drawing.Point(326, 299);
             this.nextsword2btn.Name = "nextsword2btn";
             this.nextsword2btn.Size = new System.Drawing.Size(75, 23);
             this.nextsword2btn.TabIndex = 18;
@@ -272,7 +439,7 @@
             // next1btn
             // 
             this.next1btn.Font = new System.Drawing.Font("Engravers MT", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.next1btn.Location = new System.Drawing.Point(314, 309);
+            this.next1btn.Location = new System.Drawing.Point(326, 298);
             this.next1btn.Name = "next1btn";
             this.next1btn.Size = new System.Drawing.Size(75, 23);
             this.next1btn.TabIndex = 17;
@@ -285,7 +452,7 @@
             this.wisppic.BackColor = System.Drawing.Color.Transparent;
             this.wisppic.BackgroundImage = global::WillowWoods.Properties.Resources._284011701049211;
             this.wisppic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.wisppic.Location = new System.Drawing.Point(451, 121);
+            this.wisppic.Location = new System.Drawing.Point(463, 110);
             this.wisppic.Name = "wisppic";
             this.wisppic.Size = new System.Drawing.Size(128, 144);
             this.wisppic.TabIndex = 16;
@@ -295,7 +462,7 @@
             // 
             this.swordDescriptionlbl.Font = new System.Drawing.Font("Engravers MT", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.swordDescriptionlbl.ForeColor = System.Drawing.Color.White;
-            this.swordDescriptionlbl.Location = new System.Drawing.Point(168, 73);
+            this.swordDescriptionlbl.Location = new System.Drawing.Point(194, 190);
             this.swordDescriptionlbl.Name = "swordDescriptionlbl";
             this.swordDescriptionlbl.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.swordDescriptionlbl.Size = new System.Drawing.Size(244, 40);
@@ -307,7 +474,7 @@
             // 
             this.wispDialog1lbl.Font = new System.Drawing.Font("Engravers MT", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.wispDialog1lbl.ForeColor = System.Drawing.Color.White;
-            this.wispDialog1lbl.Location = new System.Drawing.Point(182, 156);
+            this.wispDialog1lbl.Location = new System.Drawing.Point(194, 145);
             this.wispDialog1lbl.Name = "wispDialog1lbl";
             this.wispDialog1lbl.Size = new System.Drawing.Size(253, 120);
             this.wispDialog1lbl.TabIndex = 2;
@@ -318,7 +485,7 @@
             // 
             this.youDialogTwolbl.Font = new System.Drawing.Font("Engravers MT", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.youDialogTwolbl.ForeColor = System.Drawing.Color.White;
-            this.youDialogTwolbl.Location = new System.Drawing.Point(182, 156);
+            this.youDialogTwolbl.Location = new System.Drawing.Point(194, 145);
             this.youDialogTwolbl.Name = "youDialogTwolbl";
             this.youDialogTwolbl.Size = new System.Drawing.Size(244, 88);
             this.youDialogTwolbl.TabIndex = 1;
@@ -329,11 +496,23 @@
             // 
             this.youDialog1lbl.Font = new System.Drawing.Font("Engravers MT", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.youDialog1lbl.ForeColor = System.Drawing.Color.White;
-            this.youDialog1lbl.Location = new System.Drawing.Point(182, 152);
+            this.youDialog1lbl.Location = new System.Drawing.Point(194, 141);
             this.youDialog1lbl.Name = "youDialog1lbl";
             this.youDialog1lbl.Size = new System.Drawing.Size(241, 88);
             this.youDialog1lbl.TabIndex = 0;
             this.youDialog1lbl.Text = "*You finally get to the exit of the maze.*\r\n\r\n";
+            // 
+            // nextMazebtn
+            // 
+            this.nextMazebtn.Font = new System.Drawing.Font("Engravers MT", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nextMazebtn.Location = new System.Drawing.Point(650, 386);
+            this.nextMazebtn.Name = "nextMazebtn";
+            this.nextMazebtn.Size = new System.Drawing.Size(75, 23);
+            this.nextMazebtn.TabIndex = 67;
+            this.nextMazebtn.Text = "NEXT";
+            this.nextMazebtn.UseVisualStyleBackColor = true;
+            this.nextMazebtn.Visible = false;
+            this.nextMazebtn.Click += new System.EventHandler(this.nextMazebtn_Click);
             // 
             // okbtn
             // 
@@ -345,17 +524,6 @@
             this.okbtn.Text = "OK!";
             this.okbtn.UseVisualStyleBackColor = true;
             this.okbtn.Click += new System.EventHandler(this.okbtn_Click);
-            // 
-            // nextbtn
-            // 
-            this.nextbtn.Font = new System.Drawing.Font("Engravers MT", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nextbtn.Location = new System.Drawing.Point(650, 388);
-            this.nextbtn.Name = "nextbtn";
-            this.nextbtn.Size = new System.Drawing.Size(75, 23);
-            this.nextbtn.TabIndex = 65;
-            this.nextbtn.Text = "Next";
-            this.nextbtn.UseVisualStyleBackColor = true;
-            this.nextbtn.Visible = false;
             // 
             // label42
             // 
@@ -371,9 +539,9 @@
             // 
             this.label41.BackColor = System.Drawing.Color.DarkGreen;
             this.label41.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.label41.Location = new System.Drawing.Point(591, 182);
+            this.label41.Location = new System.Drawing.Point(565, 179);
             this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(74, 23);
+            this.label41.Size = new System.Drawing.Size(92, 23);
             this.label41.TabIndex = 63;
             this.label41.MouseEnter += new System.EventHandler(this.Wall_MouseEnter);
             // 
@@ -474,9 +642,9 @@
             // 
             this.label32.BackColor = System.Drawing.Color.DarkGreen;
             this.label32.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.label32.Location = new System.Drawing.Point(594, 251);
+            this.label32.Location = new System.Drawing.Point(594, 239);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(100, 23);
+            this.label32.Size = new System.Drawing.Size(107, 23);
             this.label32.TabIndex = 53;
             this.label32.MouseEnter += new System.EventHandler(this.Wall_MouseEnter);
             // 
@@ -506,7 +674,7 @@
             this.label28.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.label28.Location = new System.Drawing.Point(524, 291);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(23, 100);
+            this.label28.Size = new System.Drawing.Size(23, 69);
             this.label28.TabIndex = 50;
             this.label28.MouseEnter += new System.EventHandler(this.Wall_MouseEnter);
             // 
@@ -524,7 +692,7 @@
             // 
             this.label26.BackColor = System.Drawing.Color.DarkGreen;
             this.label26.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.label26.Location = new System.Drawing.Point(671, 214);
+            this.label26.Location = new System.Drawing.Point(698, 223);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(23, 100);
             this.label26.TabIndex = 48;
@@ -586,7 +754,7 @@
             this.label22.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.label22.Location = new System.Drawing.Point(156, 244);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(23, 100);
+            this.label22.Size = new System.Drawing.Size(23, 121);
             this.label22.TabIndex = 37;
             this.label22.MouseEnter += new System.EventHandler(this.Wall_MouseEnter);
             // 
@@ -596,7 +764,7 @@
             this.label21.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.label21.Location = new System.Drawing.Point(35, 315);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(23, 100);
+            this.label21.Size = new System.Drawing.Size(23, 110);
             this.label21.TabIndex = 36;
             this.label21.MouseEnter += new System.EventHandler(this.Wall_MouseEnter);
             // 
@@ -616,7 +784,7 @@
             this.label19.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.label19.Location = new System.Drawing.Point(270, 314);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(23, 100);
+            this.label19.Size = new System.Drawing.Size(23, 111);
             this.label19.TabIndex = 34;
             this.label19.MouseEnter += new System.EventHandler(this.Wall_MouseEnter);
             // 
@@ -634,7 +802,7 @@
             // 
             this.label17.BackColor = System.Drawing.Color.DarkGreen;
             this.label17.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.label17.Location = new System.Drawing.Point(717, 140);
+            this.label17.Location = new System.Drawing.Point(743, 140);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(23, 100);
             this.label17.TabIndex = 32;
@@ -654,7 +822,7 @@
             // 
             this.label13.BackColor = System.Drawing.Color.DarkGreen;
             this.label13.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.label13.Location = new System.Drawing.Point(118, 325);
+            this.label13.Location = new System.Drawing.Point(117, 352);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(100, 23);
             this.label13.TabIndex = 28;
@@ -716,7 +884,7 @@
             this.label7.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.label7.Location = new System.Drawing.Point(621, 140);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(100, 23);
+            this.label7.Size = new System.Drawing.Size(125, 23);
             this.label7.TabIndex = 22;
             this.label7.MouseEnter += new System.EventHandler(this.Wall_MouseEnter);
             // 
@@ -724,9 +892,9 @@
             // 
             this.label6.BackColor = System.Drawing.Color.DarkGreen;
             this.label6.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.label6.Location = new System.Drawing.Point(270, 291);
+            this.label6.Location = new System.Drawing.Point(234, 291);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(100, 23);
+            this.label6.Size = new System.Drawing.Size(136, 23);
             this.label6.TabIndex = 21;
             this.label6.MouseEnter += new System.EventHandler(this.Wall_MouseEnter);
             // 
@@ -744,7 +912,7 @@
             // 
             this.label3.BackColor = System.Drawing.Color.DarkGreen;
             this.label3.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.label3.Location = new System.Drawing.Point(47, 392);
+            this.label3.Location = new System.Drawing.Point(47, 403);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(100, 23);
             this.label3.TabIndex = 19;
@@ -1015,27 +1183,6 @@
             this.firstNextbtn.UseVisualStyleBackColor = true;
             this.firstNextbtn.Click += new System.EventHandler(this.firstNextbtn_Click);
             // 
-            // continueSwordbtn
-            // 
-            this.continueSwordbtn.Font = new System.Drawing.Font("Engravers MT", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.continueSwordbtn.Location = new System.Drawing.Point(287, 367);
-            this.continueSwordbtn.Name = "continueSwordbtn";
-            this.continueSwordbtn.Size = new System.Drawing.Size(132, 23);
-            this.continueSwordbtn.TabIndex = 20;
-            this.continueSwordbtn.Text = "Continue";
-            this.continueSwordbtn.UseVisualStyleBackColor = true;
-            this.continueSwordbtn.UseWaitCursor = true;
-            this.continueSwordbtn.Visible = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Location = new System.Drawing.Point(50, 58);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox3.TabIndex = 21;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Visible = false;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1054,10 +1201,13 @@
             this.mazePanel.ResumeLayout(false);
             this.mazePanel.PerformLayout();
             this.swordPanel.ResumeLayout(false);
+            this.Monsterpanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.monsterPic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.swordpic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.wisppic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.willowwisppicbox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1130,7 +1280,6 @@
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Button nextbtn;
         private System.Windows.Forms.Button okbtn;
         private System.Windows.Forms.Panel swordPanel;
         private System.Windows.Forms.Button nextsword2btn;
@@ -1141,8 +1290,19 @@
         private System.Windows.Forms.Label youDialogTwolbl;
         private System.Windows.Forms.Label youDialog1lbl;
         private System.Windows.Forms.Button pickUpbtn;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox swordpic;
         private System.Windows.Forms.Button continueSwordbtn;
+        private System.Windows.Forms.Panel Monsterpanel;
+        private System.Windows.Forms.PictureBox monsterPic;
+        private System.Windows.Forms.Label wispInstructionlbl;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label wispHit1lbl;
+        private System.Windows.Forms.Label wispHitMisslbl;
+        private System.Windows.Forms.Label wispMisslbl;
+        private System.Windows.Forms.Label wispHit2lbl;
+        private System.Windows.Forms.Button monsterContinuebtn;
+        private System.Windows.Forms.Button nextMazebtn;
     }
 }
 

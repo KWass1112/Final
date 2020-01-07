@@ -124,5 +124,20 @@
   <ItemGroup>
     <None Include="Resources\Working-With-Hexels-for-Drawing-Tiled-Pixel-Art.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Working-With-Hexels-for-Drawing-Tiled-Pixel-Art1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\37-374305_anime-sword-png-anime-sword-of-destiny.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\d4829c8b0612ce3fd346e36881771d12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\db9f5454d9253c360e83a01180a9762e.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lucy-linse-forest-3333.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
