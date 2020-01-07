@@ -89,12 +89,16 @@ namespace WillowWoods
 
         private void Exit_MouseEnter(object sender, EventArgs e)
         {
-            nextbtn.Visible = true;
+            nextMazebtn.Visible = true;
         }
-
         private void okbtn_Click(object sender, EventArgs e)
         {
-            next4btn.Visible = false;
+            next5btn.Visible = false;
+        }
+        private void nextMazebtn_Click(object sender, EventArgs e)
+        {
+            swordPanel.BringToFront();
+            swordPanel.Visible = true;
         }
 
         private void next1btn_Click(object sender, EventArgs e)
@@ -118,7 +122,59 @@ namespace WillowWoods
             wispDialog1lbl.Visible = false;
             wisppic.Visible = false;
             swordDescriptionlbl.Visible = true;
+            swordpic.Visible = true;
+            continueSwordbtn.Visible = true;
 
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            int userHits = 0;
+            int min = 1;
+            int max = 100;
+            int chance;
+            Random ranNumberGenerator = new Random();
+            chance = ranNumberGenerator.Next(min, max);
+
+            do
+            {
+                if (chance <= 50)
+                {
+                    wispHit1lbl.Visible = true;
+                    userHits = userHits + 1;
+
+                    if (chance <= 50)
+                    { 
+                        userHits = userHits + 1;
+                        monsterPic.Visible = false;
+                        wispHit2lbl.Visible = true;
+                        monsterContinuebtn.Visible = true;
+                             
+                    }
+                }
+                else
+                {
+                    wispMisslbl.Visible = true;
+                   
+                    if (chance <= 50)
+                    {
+                        userHits = userHits + 1;
+                        monsterPic.Visible = false;
+                        wispHitMisslbl.Visible = true;
+                        monsterContinuebtn.Visible = true;
+                      
+                    }
+
+                }
+
+            } while (userHits != 2);
+
+        }
+
+        private void continueSwordbtn_Click(object sender, EventArgs e)
+        {
+            Monsterpanel.Visible = true;
+            Monsterpanel.BringToFront();
         }
     }
      
