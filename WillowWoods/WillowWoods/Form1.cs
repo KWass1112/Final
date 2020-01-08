@@ -144,34 +144,16 @@ namespace WillowWoods
             {
                 wispMisslbl.Visible = false;
 
-                if (chance >= 50)
+                if (chance > 50)
                 {
                     label40.Text = "" + userHits;
                     label43.Text = "" + chance;
-                    wispHit1lbl.Visible = true;
                     userHits = userHits + 1;
-
-                    if (chance > 50)
-                    {
-                        userHits = userHits + 1;
-                        monsterPic.Visible = false;
-                        wispHit2lbl.Visible = true;
-                        monsterContinuebtn.Visible = true;
-                        if (userHits == 2)
-                        {
-                            again = false;
-                        }
-                    }
+                    wispHit1lbl.Visible = true;
 
                 }
-                else
-                {
-                    wispMisslbl.Visible = true;
-                   
-
-                }
-
-            } while (again);
+                
+            } while (chance > 50);
 
         }
 
