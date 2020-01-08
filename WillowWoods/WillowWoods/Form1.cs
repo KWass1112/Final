@@ -78,6 +78,7 @@ namespace WillowWoods
         {
             next4btn.Visible = false;
             mazePanel.Visible = true;
+        
         }
  
         private void Wall_MouseEnter(object sender, EventArgs e)
@@ -104,13 +105,13 @@ namespace WillowWoods
         private void next1btn_Click(object sender, EventArgs e)
         {
             youDialog1lbl.Visible = false;
-            youDialog2lbl.Visible = true;
+            youDialogTwolbl.Visible = true;
             nextsword2btn.Visible = true;
         }
 
         private void nextsword2btn_Click(object sender, EventArgs e)
         {
-            youDialog2lbl.Visible = false;
+            youDialogTwolbl.Visible = false;
             next1btn.Visible = false;
             wispDialog1lbl.Visible = true;
             pickUpbtn.Visible = true;
@@ -133,41 +134,44 @@ namespace WillowWoods
             int min = 1;
             int max = 100;
             int chance;
+            bool again = true;
             Random ranNumberGenerator = new Random();
             chance = ranNumberGenerator.Next(min, max);
 
+           
+
             do
             {
-                if (chance <= 50)
+                wispMisslbl.Visible = false;
+
+                if (chance >= 50)
                 {
+                    label40.Text = "" + userHits;
+                    label43.Text = "" + chance;
                     wispHit1lbl.Visible = true;
                     userHits = userHits + 1;
 
-                    if (chance <= 50)
-                    { 
+                    if (chance > 50)
+                    {
                         userHits = userHits + 1;
                         monsterPic.Visible = false;
                         wispHit2lbl.Visible = true;
                         monsterContinuebtn.Visible = true;
-                             
+                        if (userHits == 2)
+                        {
+                            again = false;
+                        }
                     }
+
                 }
                 else
                 {
                     wispMisslbl.Visible = true;
                    
-                    if (chance <= 50)
-                    {
-                        userHits = userHits + 1;
-                        monsterPic.Visible = false;
-                        wispHitMisslbl.Visible = true;
-                        monsterContinuebtn.Visible = true;
-                      
-                    }
 
                 }
 
-            } while (userHits != 2);
+            } while (again);
 
         }
 
@@ -176,6 +180,8 @@ namespace WillowWoods
             Monsterpanel.Visible = true;
             Monsterpanel.BringToFront();
         }
+
+        
     }
      
 }
