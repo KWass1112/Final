@@ -35,11 +35,12 @@
             this.mazePanel = new System.Windows.Forms.Panel();
             this.swordPanel = new System.Windows.Forms.Panel();
             this.Monsterpanel = new System.Windows.Forms.Panel();
+            this.label43 = new System.Windows.Forms.Label();
+            this.label40 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.monsterContinuebtn = new System.Windows.Forms.Button();
             this.wispHitMisslbl = new System.Windows.Forms.Label();
             this.wispMisslbl = new System.Windows.Forms.Label();
-            this.wispHit2lbl = new System.Windows.Forms.Label();
             this.wispHit1lbl = new System.Windows.Forms.Label();
             this.wispInstructionlbl = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -118,8 +119,6 @@
             this.willowWoodslbl = new System.Windows.Forms.Label();
             this.next2btn = new System.Windows.Forms.Button();
             this.firstNextbtn = new System.Windows.Forms.Button();
-            this.label40 = new System.Windows.Forms.Label();
-            this.label43 = new System.Windows.Forms.Label();
             this.storypanel.SuspendLayout();
             this.IntroPanel.SuspendLayout();
             this.mazePanel.SuspendLayout();
@@ -273,7 +272,6 @@
             this.Monsterpanel.Controls.Add(this.monsterContinuebtn);
             this.Monsterpanel.Controls.Add(this.wispHitMisslbl);
             this.Monsterpanel.Controls.Add(this.wispMisslbl);
-            this.Monsterpanel.Controls.Add(this.wispHit2lbl);
             this.Monsterpanel.Controls.Add(this.wispHit1lbl);
             this.Monsterpanel.Controls.Add(this.wispInstructionlbl);
             this.Monsterpanel.Controls.Add(this.pictureBox3);
@@ -284,6 +282,26 @@
             this.Monsterpanel.Size = new System.Drawing.Size(825, 458);
             this.Monsterpanel.TabIndex = 22;
             this.Monsterpanel.Visible = false;
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.BackColor = System.Drawing.Color.BlanchedAlmond;
+            this.label43.Location = new System.Drawing.Point(718, 28);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(41, 13);
+            this.label43.TabIndex = 26;
+            this.label43.Text = "label43";
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.ForeColor = System.Drawing.Color.Coral;
+            this.label40.Location = new System.Drawing.Point(719, 8);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(41, 13);
+            this.label40.TabIndex = 25;
+            this.label40.Text = "label40";
             // 
             // button1
             // 
@@ -313,7 +331,7 @@
             this.wispHitMisslbl.BackColor = System.Drawing.Color.Transparent;
             this.wispHitMisslbl.Font = new System.Drawing.Font("Engravers MT", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.wispHitMisslbl.ForeColor = System.Drawing.Color.White;
-            this.wispHitMisslbl.Location = new System.Drawing.Point(184, 370);
+            this.wispHitMisslbl.Location = new System.Drawing.Point(185, 366);
             this.wispHitMisslbl.Name = "wispHitMisslbl";
             this.wispHitMisslbl.Size = new System.Drawing.Size(541, 69);
             this.wispHitMisslbl.TabIndex = 23;
@@ -325,36 +343,23 @@
             this.wispMisslbl.BackColor = System.Drawing.Color.Transparent;
             this.wispMisslbl.Font = new System.Drawing.Font("Engravers MT", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.wispMisslbl.ForeColor = System.Drawing.Color.White;
-            this.wispMisslbl.Location = new System.Drawing.Point(185, 368);
+            this.wispMisslbl.Location = new System.Drawing.Point(182, 366);
             this.wispMisslbl.Name = "wispMisslbl";
             this.wispMisslbl.Size = new System.Drawing.Size(589, 74);
             this.wispMisslbl.TabIndex = 22;
             this.wispMisslbl.Text = "???:\r\n\r\nOh no! You missed! Quickly try hitting it again!\r\n";
             this.wispMisslbl.Visible = false;
             // 
-            // wispHit2lbl
-            // 
-            this.wispHit2lbl.BackColor = System.Drawing.Color.Transparent;
-            this.wispHit2lbl.Font = new System.Drawing.Font("Engravers MT", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.wispHit2lbl.ForeColor = System.Drawing.Color.White;
-            this.wispHit2lbl.Location = new System.Drawing.Point(186, 368);
-            this.wispHit2lbl.Name = "wispHit2lbl";
-            this.wispHit2lbl.Size = new System.Drawing.Size(591, 74);
-            this.wispHit2lbl.TabIndex = 21;
-            this.wispHit2lbl.Text = "???:\r\n\r\nWow you defeated the monster! Guess you are pretty strong!";
-            this.wispHit2lbl.Visible = false;
-            // 
             // wispHit1lbl
             // 
             this.wispHit1lbl.BackColor = System.Drawing.Color.Transparent;
             this.wispHit1lbl.Font = new System.Drawing.Font("Engravers MT", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.wispHit1lbl.ForeColor = System.Drawing.Color.Transparent;
-            this.wispHit1lbl.Location = new System.Drawing.Point(184, 366);
+            this.wispHit1lbl.Location = new System.Drawing.Point(182, 366);
             this.wispHit1lbl.Name = "wispHit1lbl";
             this.wispHit1lbl.Size = new System.Drawing.Size(591, 82);
             this.wispHit1lbl.TabIndex = 20;
-            this.wispHit1lbl.Text = "???:\r\n\r\nYou hit it! It looks like its wearing down. Try hitting it again to defea" +
-    "t it! ";
+            this.wispHit1lbl.Text = "???:\r\n\r\nWow you defeated the monster! Guess you are pretty strong!\r\n\r\n";
             this.wispHit1lbl.Visible = false;
             // 
             // wispInstructionlbl
@@ -1188,26 +1193,6 @@
             this.firstNextbtn.UseVisualStyleBackColor = true;
             this.firstNextbtn.Click += new System.EventHandler(this.firstNextbtn_Click);
             // 
-            // label40
-            // 
-            this.label40.AutoSize = true;
-            this.label40.ForeColor = System.Drawing.Color.Coral;
-            this.label40.Location = new System.Drawing.Point(719, 8);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(41, 13);
-            this.label40.TabIndex = 25;
-            this.label40.Text = "label40";
-            // 
-            // label43
-            // 
-            this.label43.AutoSize = true;
-            this.label43.BackColor = System.Drawing.Color.BlanchedAlmond;
-            this.label43.Location = new System.Drawing.Point(718, 28);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(41, 13);
-            this.label43.TabIndex = 26;
-            this.label43.Text = "label43";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1326,7 +1311,6 @@
         private System.Windows.Forms.Label wispHit1lbl;
         private System.Windows.Forms.Label wispHitMisslbl;
         private System.Windows.Forms.Label wispMisslbl;
-        private System.Windows.Forms.Label wispHit2lbl;
         private System.Windows.Forms.Button monsterContinuebtn;
         private System.Windows.Forms.Button nextMazebtn;
         private System.Windows.Forms.Label label40;
