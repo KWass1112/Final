@@ -63,6 +63,16 @@ namespace WillowWoods.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _0fc84f0c3d4c39f {
+            get {
+                object obj = ResourceManager.GetObject("0fc84f0c3d4c39f", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _284011701049211 {
             get {
                 object obj = ResourceManager.GetObject("284011701049211", resourceCulture);
@@ -156,6 +166,16 @@ namespace WillowWoods.Properties {
         internal static System.Drawing.Bitmap download__4_ {
             get {
                 object obj = ResourceManager.GetObject("download (4)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ffafd58f40dcfd2 {
+            get {
+                object obj = ResourceManager.GetObject("ffafd58f40dcfd2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
