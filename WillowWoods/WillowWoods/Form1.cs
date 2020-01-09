@@ -128,32 +128,53 @@ namespace WillowWoods
 
         }
 
+        private int a = 0;
         private void button1_Click_1(object sender, EventArgs e)
         {
-            int userHits = 0;
+            a++;
             int min = 1;
             int max = 100;
             int chance;
-            bool again = true;
             Random ranNumberGenerator = new Random();
             chance = ranNumberGenerator.Next(min, max);
 
-           
-
             do
             {
-                wispMisslbl.Visible = false;
-
-                if (chance > 50)
+                if (chance < 50)
                 {
-                    label40.Text = "" + userHits;
-                    label43.Text = "" + chance;
-                    userHits = userHits + 1;
                     wispHit1lbl.Visible = true;
 
+                    if (a == 2)
+                    {
+                        wispHit2lbl.Visible = true;
+
+                    }
+                    else if ( a == 3)
+                    {
+                        monsterPic.Visible = false;
+                        defeatlbl.Visible = true;
+                        monsterContinuebtn.Visible = true;
+
+                    }
+                }
+                else
+                {
+                    wispMisslbl.Visible = true;
+
+                    if (a == 2)
+                    {
+                        defeatlbl.Visible = true;
+
+                    }
+                    else if (a == 3)
+                    {
+                        monsterPic.Visible = false;
+                        monsterContinuebtn.Visible = true;
+                    }
                 }
                 
-            } while (chance > 50);
+                
+            } while (a > 3);
 
         }
 
@@ -163,7 +184,28 @@ namespace WillowWoods
             Monsterpanel.BringToFront();
         }
 
-        
+        private void monsterContinuebtn_Click(object sender, EventArgs e)
+        {
+            doorPanel.Visible = true;
+            doorPanel.BringToFront();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            int userChoice;
+            userChoice = Convert.ToInt32(userChoicetxt.Text);
+
+            if (userChoice == 1)
+            {
+                Monsterpanel.BringToFront();
+            }
+            else if (userChoice == 2)
+            {
+                //show exit and congrats
+            }
+        }
+
+       
     }
      
 }
