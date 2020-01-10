@@ -351,9 +351,10 @@
             this.endingpanel.Controls.Add(this.scene2lbl);
             this.endingpanel.Controls.Add(this.wispEndDialoglbl);
             this.endingpanel.Controls.Add(this.pictureBox1);
-            this.endingpanel.Location = new System.Drawing.Point(11, 11);
+            this.endingpanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.endingpanel.Location = new System.Drawing.Point(0, 0);
             this.endingpanel.Name = "endingpanel";
-            this.endingpanel.Size = new System.Drawing.Size(799, 437);
+            this.endingpanel.Size = new System.Drawing.Size(825, 458);
             this.endingpanel.TabIndex = 25;
             // 
             // scene5lbl
@@ -451,7 +452,7 @@
             // 
             this.scene1lbl.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.scene1lbl.ForeColor = System.Drawing.Color.White;
-            this.scene1lbl.Location = new System.Drawing.Point(0, -8);
+            this.scene1lbl.Location = new System.Drawing.Point(3, 5);
             this.scene1lbl.Name = "scene1lbl";
             this.scene1lbl.Size = new System.Drawing.Size(334, 86);
             this.scene1lbl.TabIndex = 25;
@@ -473,7 +474,7 @@
             // 
             this.label45.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label45.ForeColor = System.Drawing.Color.White;
-            this.label45.Location = new System.Drawing.Point(347, 27);
+            this.label45.Location = new System.Drawing.Point(355, 20);
             this.label45.Name = "label45";
             this.label45.Size = new System.Drawing.Size(135, 102);
             this.label45.TabIndex = 23;
