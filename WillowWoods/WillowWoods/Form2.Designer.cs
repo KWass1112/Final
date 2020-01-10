@@ -30,7 +30,6 @@
         {
             this.wispdialoglbl = new System.Windows.Forms.Label();
             this.Next1btn = new System.Windows.Forms.Button();
-            this.willowwisppicbox = new System.Windows.Forms.PictureBox();
             this.youDialog1lbl = new System.Windows.Forms.Label();
             this.wispDialog2lbl = new System.Windows.Forms.Label();
             this.youDialog2lbl = new System.Windows.Forms.Label();
@@ -40,7 +39,16 @@
             this.Next4btn = new System.Windows.Forms.Button();
             this.youDialog4lbl = new System.Windows.Forms.Label();
             this.Next5btn = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.willowwisppicbox = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.willowwisppicbox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // wispdialoglbl
@@ -66,17 +74,6 @@
             this.Next1btn.TabIndex = 1;
             this.Next1btn.Text = "Next";
             this.Next1btn.UseVisualStyleBackColor = false;
-            // 
-            // willowwisppicbox
-            // 
-            this.willowwisppicbox.BackColor = System.Drawing.Color.Transparent;
-            this.willowwisppicbox.BackgroundImage = global::WillowWoods.Properties.Resources._284011701049211;
-            this.willowwisppicbox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.willowwisppicbox.Location = new System.Drawing.Point(467, 120);
-            this.willowwisppicbox.Name = "willowwisppicbox";
-            this.willowwisppicbox.Size = new System.Drawing.Size(136, 144);
-            this.willowwisppicbox.TabIndex = 2;
-            this.willowwisppicbox.TabStop = false;
             // 
             // youDialog1lbl
             // 
@@ -184,6 +181,64 @@
             this.Next5btn.UseVisualStyleBackColor = false;
             this.Next5btn.Visible = false;
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.pictureBox2);
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(661, 439);
+            this.panel1.TabIndex = 12;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::WillowWoods.Properties.Resources.ffafd58f40dcfd2;
+            this.pictureBox1.Location = new System.Drawing.Point(388, 40);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(229, 277);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // willowwisppicbox
+            // 
+            this.willowwisppicbox.BackColor = System.Drawing.Color.Transparent;
+            this.willowwisppicbox.BackgroundImage = global::WillowWoods.Properties.Resources._284011701049211;
+            this.willowwisppicbox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.willowwisppicbox.Location = new System.Drawing.Point(467, 120);
+            this.willowwisppicbox.Name = "willowwisppicbox";
+            this.willowwisppicbox.Size = new System.Drawing.Size(136, 144);
+            this.willowwisppicbox.TabIndex = 2;
+            this.willowwisppicbox.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackgroundImage = global::WillowWoods.Properties.Resources.ffafd58f40dcfd2;
+            this.pictureBox2.Location = new System.Drawing.Point(46, 40);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(229, 277);
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(228, 337);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(229, 20);
+            this.textBox1.TabIndex = 2;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(305, 363);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -191,6 +246,7 @@
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(661, 439);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.Next5btn);
             this.Controls.Add(this.youDialog4lbl);
             this.Controls.Add(this.Next4btn);
@@ -205,7 +261,11 @@
             this.Controls.Add(this.wispdialoglbl);
             this.Name = "Form2";
             this.Text = "Willow Woods P.2";
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.willowwisppicbox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -225,5 +285,10 @@
         private System.Windows.Forms.Button Next4btn;
         private System.Windows.Forms.Label youDialog4lbl;
         private System.Windows.Forms.Button Next5btn;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
