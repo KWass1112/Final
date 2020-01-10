@@ -140,10 +140,12 @@
     <None Include="Resources\lucy-linse-forest-3333.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\0fc84f0c3d4c39f.png" />
+
+    <None Include="Resources\0fc84f0c3d4c39f1.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\ffafd58f40dcfd2.png" />
+    <None Include="Resources\giphy.gif" />
+
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
