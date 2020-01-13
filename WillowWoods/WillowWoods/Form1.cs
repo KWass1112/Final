@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WillowWoods
 {
-    public partial class Form1 : Form
+    public partial class WillowWoodsForm : Form
     {
-        public Form1()
+        public WillowWoodsForm()
         {
             InitializeComponent();
         }
@@ -146,11 +146,13 @@ namespace WillowWoods
 
                     if (a == 2)
                     {
+                        wispHit1lbl.Visible = false;
                         wispHit2lbl.Visible = true;
 
                     }
                     else if ( a == 3)
                     {
+                        wispHit1lbl.Visible = false;
                         monsterPic.Visible = false;
                         defeatlbl.Visible = true;
                         monsterContinuebtn.Visible = true;
@@ -163,11 +165,13 @@ namespace WillowWoods
 
                     if (a == 2)
                     {
-                        defeatlbl.Visible = true;
-
+                        wispMisslbl.Visible = false;
+                        wispHit1lbl.Visible = true;
                     }
                     else if (a == 3)
                     {
+                        wispMisslbl.Visible = false;
+                        defeatlbl.Visible = true;
                         monsterPic.Visible = false;
                         monsterContinuebtn.Visible = true;
                     }
@@ -201,8 +205,15 @@ namespace WillowWoods
             }
             else if (userChoice == 2)
             {
-                //show exit and congrats
+                endingpanel.Visible = true;
+                endingpanel.BringToFront();
+
             }
+        }
+
+        private void nextEndbtn_Click(object sender, EventArgs e)
+        {
+
         }
 
        
