@@ -36,7 +36,11 @@
             this.swordPanel = new System.Windows.Forms.Panel();
             this.Monsterpanel = new System.Windows.Forms.Panel();
             this.doorPanel = new System.Windows.Forms.Panel();
+            this.MonsterPanel2 = new System.Windows.Forms.Panel();
             this.endingpanel = new System.Windows.Forms.Panel();
+            this.scene5lbl = new System.Windows.Forms.Label();
+            this.scene4lbl = new System.Windows.Forms.Label();
+            this.wispEndDialog5lbl = new System.Windows.Forms.Label();
             this.scene3lbl = new System.Windows.Forms.Label();
             this.wispEndDialog4lbl = new System.Windows.Forms.Label();
             this.youEndDialog4lbl = new System.Windows.Forms.Label();
@@ -47,9 +51,6 @@
             this.nextEndbtn = new System.Windows.Forms.Button();
             this.youEndDialoglbl = new System.Windows.Forms.Label();
             this.wispEndDialoglbl = new System.Windows.Forms.Label();
-            this.scene5lbl = new System.Windows.Forms.Label();
-            this.wispEndDialog5lbl = new System.Windows.Forms.Label();
-            this.scene4lbl = new System.Windows.Forms.Label();
             this.scene1lbl = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
@@ -144,12 +145,21 @@
             this.willowWoodslbl = new System.Windows.Forms.Label();
             this.next2btn = new System.Windows.Forms.Button();
             this.firstNextbtn = new System.Windows.Forms.Button();
+            this.Monster2 = new System.Windows.Forms.Panel();
+            this.Hit2 = new System.Windows.Forms.Button();
+            this.Wisp2 = new System.Windows.Forms.Panel();
+            this.miss2 = new System.Windows.Forms.Label();
+            this.monsterHit2 = new System.Windows.Forms.Label();
+            this.defeat2 = new System.Windows.Forms.Label();
+            this.monsterContinue2 = new System.Windows.Forms.Button();
+            this.monsterReturn = new System.Windows.Forms.Label();
             this.storypanel.SuspendLayout();
             this.IntroPanel.SuspendLayout();
             this.mazePanel.SuspendLayout();
             this.swordPanel.SuspendLayout();
             this.Monsterpanel.SuspendLayout();
             this.doorPanel.SuspendLayout();
+            this.MonsterPanel2.SuspendLayout();
             this.endingpanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.wispDoorpic)).BeginInit();
@@ -161,6 +171,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.wisppic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.willowwisppicbox)).BeginInit();
+            this.Monster2.SuspendLayout();
             this.SuspendLayout();
             // 
             // Welcomelbl
@@ -316,7 +327,7 @@
             // 
             // doorPanel
             // 
-            this.doorPanel.Controls.Add(this.endingpanel);
+            this.doorPanel.Controls.Add(this.MonsterPanel2);
             this.doorPanel.Controls.Add(this.button2);
             this.doorPanel.Controls.Add(this.door2lbl);
             this.doorPanel.Controls.Add(this.door1lbl);
@@ -326,12 +337,28 @@
             this.doorPanel.Controls.Add(this.wispDoorpic);
             this.doorPanel.Controls.Add(this.door1pic);
             this.doorPanel.Controls.Add(this.door2pic);
-            this.doorPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.doorPanel.Location = new System.Drawing.Point(0, 0);
+            this.doorPanel.Location = new System.Drawing.Point(0, -1);
             this.doorPanel.Name = "doorPanel";
-            this.doorPanel.Size = new System.Drawing.Size(825, 458);
+            this.doorPanel.Size = new System.Drawing.Size(826, 459);
             this.doorPanel.TabIndex = 28;
             this.doorPanel.Visible = false;
+            // 
+            // MonsterPanel2
+            // 
+            this.MonsterPanel2.BackgroundImage = global::WillowWoods.Properties.Resources.lucy_linse_forest_3333;
+            this.MonsterPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.MonsterPanel2.Controls.Add(this.endingpanel);
+            this.MonsterPanel2.Controls.Add(this.Monster2);
+            this.MonsterPanel2.Controls.Add(this.Hit2);
+            this.MonsterPanel2.Controls.Add(this.Wisp2);
+            this.MonsterPanel2.Controls.Add(this.miss2);
+            this.MonsterPanel2.Controls.Add(this.defeat2);
+            this.MonsterPanel2.Controls.Add(this.monsterHit2);
+            this.MonsterPanel2.Controls.Add(this.monsterReturn);
+            this.MonsterPanel2.Location = new System.Drawing.Point(-1, 0);
+            this.MonsterPanel2.Name = "MonsterPanel2";
+            this.MonsterPanel2.Size = new System.Drawing.Size(827, 459);
+            this.MonsterPanel2.TabIndex = 26;
             // 
             // endingpanel
             // 
@@ -350,12 +377,49 @@
             this.endingpanel.Controls.Add(this.wispEndDialoglbl);
             this.endingpanel.Controls.Add(this.scene1lbl);
             this.endingpanel.Controls.Add(this.pictureBox1);
-            this.endingpanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.endingpanel.Location = new System.Drawing.Point(0, 0);
+            this.endingpanel.Location = new System.Drawing.Point(12, 14);
             this.endingpanel.Name = "endingpanel";
-            this.endingpanel.Size = new System.Drawing.Size(825, 458);
+            this.endingpanel.Size = new System.Drawing.Size(85, 85);
             this.endingpanel.TabIndex = 25;
             this.endingpanel.Visible = false;
+            // 
+            // scene5lbl
+            // 
+            this.scene5lbl.BackColor = System.Drawing.Color.Transparent;
+            this.scene5lbl.Font = new System.Drawing.Font("Engravers MT", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.scene5lbl.ForeColor = System.Drawing.Color.White;
+            this.scene5lbl.Location = new System.Drawing.Point(176, 109);
+            this.scene5lbl.Name = "scene5lbl";
+            this.scene5lbl.Size = new System.Drawing.Size(360, 116);
+            this.scene5lbl.TabIndex = 33;
+            this.scene5lbl.Text = "You: \r\n\r\n**Then it clicks, Luna is Willow.***";
+            this.scene5lbl.Visible = false;
+            // 
+            // scene4lbl
+            // 
+            this.scene4lbl.BackColor = System.Drawing.Color.Transparent;
+            this.scene4lbl.Font = new System.Drawing.Font("Engravers MT", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.scene4lbl.ForeColor = System.Drawing.Color.White;
+            this.scene4lbl.Location = new System.Drawing.Point(173, 114);
+            this.scene4lbl.Name = "scene4lbl";
+            this.scene4lbl.Size = new System.Drawing.Size(368, 190);
+            this.scene4lbl.TabIndex = 26;
+            this.scene4lbl.Text = "You: \r\n\r\n**You quickly turn around and catch a glimpse of what looks like a girl " +
+    "waving before disappearing in the fog.**";
+            this.scene4lbl.Visible = false;
+            // 
+            // wispEndDialog5lbl
+            // 
+            this.wispEndDialog5lbl.AutoSize = true;
+            this.wispEndDialog5lbl.BackColor = System.Drawing.Color.Transparent;
+            this.wispEndDialog5lbl.Font = new System.Drawing.Font("Engravers MT", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.wispEndDialog5lbl.ForeColor = System.Drawing.Color.White;
+            this.wispEndDialog5lbl.Location = new System.Drawing.Point(180, 111);
+            this.wispEndDialog5lbl.Name = "wispEndDialog5lbl";
+            this.wispEndDialog5lbl.Size = new System.Drawing.Size(391, 51);
+            this.wispEndDialog5lbl.TabIndex = 29;
+            this.wispEndDialog5lbl.Text = "???:\r\n\r\nCome back soon to play again...";
+            this.wispEndDialog5lbl.Visible = false;
             // 
             // scene3lbl
             // 
@@ -374,11 +438,11 @@
             // wispEndDialog4lbl
             // 
             this.wispEndDialog4lbl.BackColor = System.Drawing.Color.Transparent;
-            this.wispEndDialog4lbl.Font = new System.Drawing.Font("Engravers MT", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.wispEndDialog4lbl.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.wispEndDialog4lbl.ForeColor = System.Drawing.Color.White;
-            this.wispEndDialog4lbl.Location = new System.Drawing.Point(178, 111);
+            this.wispEndDialog4lbl.Location = new System.Drawing.Point(327, 276);
             this.wispEndDialog4lbl.Name = "wispEndDialog4lbl";
-            this.wispEndDialog4lbl.Size = new System.Drawing.Size(230, 71);
+            this.wispEndDialog4lbl.Size = new System.Drawing.Size(132, 50);
             this.wispEndDialog4lbl.TabIndex = 28;
             this.wispEndDialog4lbl.Text = "Luna:\r\n\r\nIt\'s no big deal...";
             this.wispEndDialog4lbl.Visible = false;
@@ -396,66 +460,7 @@
     "ave made it out alive if you didn\'t help me.";
             this.youEndDialog4lbl.Visible = false;
             // 
-
-            // wispEndDialog5lbl
-            // 
-            this.wispEndDialog5lbl.AutoSize = true;
-            this.wispEndDialog5lbl.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.wispEndDialog5lbl.ForeColor = System.Drawing.Color.White;
-            this.wispEndDialog5lbl.Location = new System.Drawing.Point(324, 386);
-            this.wispEndDialog5lbl.Name = "wispEndDialog5lbl";
-            this.wispEndDialog5lbl.Size = new System.Drawing.Size(179, 48);
-            this.wispEndDialog5lbl.TabIndex = 29;
-            this.wispEndDialog5lbl.Text = "???:\r\n\r\nCome back soon to play again...";
-            this.wispEndDialog5lbl.Visible = false;
-            // 
-            // wispEndDialog4lbl
-            // 
-            this.wispEndDialog4lbl.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.wispEndDialog4lbl.ForeColor = System.Drawing.Color.White;
-            this.wispEndDialog4lbl.Location = new System.Drawing.Point(327, 276);
-            this.wispEndDialog4lbl.Name = "wispEndDialog4lbl";
-            this.wispEndDialog4lbl.Size = new System.Drawing.Size(132, 50);
-            this.wispEndDialog4lbl.TabIndex = 28;
-            this.wispEndDialog4lbl.Text = "Luna:\r\n\r\nIt\'s no big deal...";
-            this.wispEndDialog4lbl.Visible = false;
-            // 
-            // wispEndDialog2lbl
-            // 
-            this.wispEndDialog2lbl.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.wispEndDialog2lbl.ForeColor = System.Drawing.Color.White;
-            this.wispEndDialog2lbl.Location = new System.Drawing.Point(3, 233);
-            this.wispEndDialog2lbl.Name = "wispEndDialog2lbl";
-            this.wispEndDialog2lbl.Size = new System.Drawing.Size(112, 75);
-            this.wispEndDialog2lbl.TabIndex = 27;
-            this.wispEndDialog2lbl.Text = "???:\r\n\r\nYea, but it was fun don\'t you think?";
-            this.wispEndDialog2lbl.Visible = false;
-            // 
-            // scene4lbl
-            // 
-            this.scene4lbl.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.scene4lbl.ForeColor = System.Drawing.Color.White;
-            this.scene4lbl.Location = new System.Drawing.Point(591, 213);
-            this.scene4lbl.Name = "scene4lbl";
-            this.scene4lbl.Size = new System.Drawing.Size(195, 93);
-            this.scene4lbl.TabIndex = 26;
-            this.scene4lbl.Text = "You: \r\n\r\n**You quickly turn around and catch a glimpse of what looks like a girl " +
-    "waving before disappearing in the fog.**";
-            this.scene4lbl.Visible = false;
-            // 
-            // scene1lbl
-            // 
-            this.scene1lbl.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.scene1lbl.ForeColor = System.Drawing.Color.White;
-            this.scene1lbl.Location = new System.Drawing.Point(3, 5);
-            this.scene1lbl.Name = "scene1lbl";
-            this.scene1lbl.Size = new System.Drawing.Size(334, 86);
-            this.scene1lbl.TabIndex = 25;
-            this.scene1lbl.Text = "You:\r\n\r\n**A bright light blinds your vision. When you gain back your vision, you " +
-    "see the sunset and a lake all which that are too familiar.** ";
-            // 
-            // youEndDialoglbl
-
+            // wispEndDialog3lbl
             // 
             this.wispEndDialog3lbl.BackColor = System.Drawing.Color.Transparent;
             this.wispEndDialog3lbl.Font = new System.Drawing.Font("Engravers MT", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -472,9 +477,7 @@
             this.label45.BackColor = System.Drawing.Color.Transparent;
             this.label45.Font = new System.Drawing.Font("Engravers MT", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label45.ForeColor = System.Drawing.Color.White;
-
             this.label45.Location = new System.Drawing.Point(182, 109);
-
             this.label45.Name = "label45";
             this.label45.Size = new System.Drawing.Size(362, 128);
             this.label45.TabIndex = 23;
@@ -542,43 +545,6 @@
             this.wispEndDialoglbl.TabIndex = 20;
             this.wispEndDialoglbl.Text = "???:\r\n\r\nYay! It looks like you chose the right door! Now you\'re free!\r\n";
             this.wispEndDialoglbl.Visible = false;
-            // 
-            // scene5lbl
-            // 
-            this.scene5lbl.BackColor = System.Drawing.Color.Transparent;
-            this.scene5lbl.Font = new System.Drawing.Font("Engravers MT", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.scene5lbl.ForeColor = System.Drawing.Color.White;
-            this.scene5lbl.Location = new System.Drawing.Point(176, 109);
-            this.scene5lbl.Name = "scene5lbl";
-            this.scene5lbl.Size = new System.Drawing.Size(360, 116);
-            this.scene5lbl.TabIndex = 33;
-            this.scene5lbl.Text = "You: \r\n\r\n**Then it clicks, Luna is Willow.***";
-            this.scene5lbl.Visible = false;
-            // 
-            // wispEndDialog5lbl
-            // 
-            this.wispEndDialog5lbl.BackColor = System.Drawing.Color.Transparent;
-            this.wispEndDialog5lbl.Font = new System.Drawing.Font("Engravers MT", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.wispEndDialog5lbl.ForeColor = System.Drawing.Color.White;
-            this.wispEndDialog5lbl.Location = new System.Drawing.Point(180, 111);
-            this.wispEndDialog5lbl.Name = "wispEndDialog5lbl";
-            this.wispEndDialog5lbl.Size = new System.Drawing.Size(356, 103);
-            this.wispEndDialog5lbl.TabIndex = 29;
-            this.wispEndDialog5lbl.Text = "???:\r\n\r\nCome back soon to play again...";
-            this.wispEndDialog5lbl.Visible = false;
-            // 
-            // scene4lbl
-            // 
-            this.scene4lbl.BackColor = System.Drawing.Color.Transparent;
-            this.scene4lbl.Font = new System.Drawing.Font("Engravers MT", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.scene4lbl.ForeColor = System.Drawing.Color.White;
-            this.scene4lbl.Location = new System.Drawing.Point(173, 114);
-            this.scene4lbl.Name = "scene4lbl";
-            this.scene4lbl.Size = new System.Drawing.Size(368, 190);
-            this.scene4lbl.TabIndex = 26;
-            this.scene4lbl.Text = "You: \r\n\r\n**You quickly turn around and catch a glimpse of what looks like a girl " +
-    "waving before disappearing in the fog.**";
-            this.scene4lbl.Visible = false;
             // 
             // scene1lbl
             // 
@@ -715,7 +681,7 @@
             this.wispHit1lbl.BackColor = System.Drawing.Color.Transparent;
             this.wispHit1lbl.Font = new System.Drawing.Font("Engravers MT", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.wispHit1lbl.ForeColor = System.Drawing.Color.White;
-            this.wispHit1lbl.Location = new System.Drawing.Point(188, 371);
+            this.wispHit1lbl.Location = new System.Drawing.Point(182, 368);
             this.wispHit1lbl.Name = "wispHit1lbl";
             this.wispHit1lbl.Size = new System.Drawing.Size(598, 86);
             this.wispHit1lbl.TabIndex = 27;
@@ -741,9 +707,9 @@
             this.defeatlbl.BackColor = System.Drawing.Color.Transparent;
             this.defeatlbl.Font = new System.Drawing.Font("Engravers MT", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.defeatlbl.ForeColor = System.Drawing.Color.White;
-            this.defeatlbl.Location = new System.Drawing.Point(188, 368);
+            this.defeatlbl.Location = new System.Drawing.Point(182, 368);
             this.defeatlbl.Name = "defeatlbl";
-            this.defeatlbl.Size = new System.Drawing.Size(587, 66);
+            this.defeatlbl.Size = new System.Drawing.Size(589, 77);
             this.defeatlbl.TabIndex = 23;
             this.defeatlbl.Text = "???:\r\n\r\nYou defeated the monster! Whew that was close!";
             this.defeatlbl.Visible = false;
@@ -822,7 +788,7 @@
             // continueSwordbtn
             // 
             this.continueSwordbtn.Font = new System.Drawing.Font("Engravers MT", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.continueSwordbtn.Location = new System.Drawing.Point(338, 369);
+            this.continueSwordbtn.Location = new System.Drawing.Point(345, 372);
             this.continueSwordbtn.Name = "continueSwordbtn";
             this.continueSwordbtn.Size = new System.Drawing.Size(134, 23);
             this.continueSwordbtn.TabIndex = 20;
@@ -835,7 +801,7 @@
             // pickUpbtn
             // 
             this.pickUpbtn.Font = new System.Drawing.Font("Engravers MT", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pickUpbtn.Location = new System.Drawing.Point(338, 341);
+            this.pickUpbtn.Location = new System.Drawing.Point(344, 344);
             this.pickUpbtn.Name = "pickUpbtn";
             this.pickUpbtn.Size = new System.Drawing.Size(134, 22);
             this.pickUpbtn.TabIndex = 19;
@@ -847,7 +813,7 @@
             // nextsword2btn
             // 
             this.nextsword2btn.Font = new System.Drawing.Font("Engravers MT", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nextsword2btn.Location = new System.Drawing.Point(365, 310);
+            this.nextsword2btn.Location = new System.Drawing.Point(372, 342);
             this.nextsword2btn.Name = "nextsword2btn";
             this.nextsword2btn.Size = new System.Drawing.Size(78, 25);
             this.nextsword2btn.TabIndex = 18;
@@ -859,7 +825,7 @@
             // next1btn
             // 
             this.next1btn.Font = new System.Drawing.Font("Engravers MT", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.next1btn.Location = new System.Drawing.Point(365, 311);
+            this.next1btn.Location = new System.Drawing.Point(372, 343);
             this.next1btn.Name = "next1btn";
             this.next1btn.Size = new System.Drawing.Size(75, 23);
             this.next1btn.TabIndex = 17;
@@ -1523,7 +1489,7 @@
             // continuebtn
             // 
             this.continuebtn.Font = new System.Drawing.Font("Engravers MT", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.continuebtn.Location = new System.Drawing.Point(289, 385);
+            this.continuebtn.Location = new System.Drawing.Point(301, 337);
             this.continuebtn.Name = "continuebtn";
             this.continuebtn.Size = new System.Drawing.Size(228, 23);
             this.continuebtn.TabIndex = 16;
@@ -1603,6 +1569,97 @@
             this.firstNextbtn.UseVisualStyleBackColor = true;
             this.firstNextbtn.Click += new System.EventHandler(this.firstNextbtn_Click);
             // 
+            // Monster2
+            // 
+            this.Monster2.BackColor = System.Drawing.Color.Transparent;
+            this.Monster2.BackgroundImage = global::WillowWoods.Properties.Resources.db9f5454d9253c360e83a01180a9762e;
+            this.Monster2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Monster2.Controls.Add(this.monsterContinue2);
+            this.Monster2.Location = new System.Drawing.Point(234, 74);
+            this.Monster2.Name = "Monster2";
+            this.Monster2.Size = new System.Drawing.Size(381, 256);
+            this.Monster2.TabIndex = 26;
+            // 
+            // Hit2
+            // 
+            this.Hit2.Font = new System.Drawing.Font("Engravers MT", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Hit2.Location = new System.Drawing.Point(382, 347);
+            this.Hit2.Name = "Hit2";
+            this.Hit2.Size = new System.Drawing.Size(84, 35);
+            this.Hit2.TabIndex = 27;
+            this.Hit2.Text = "Hit!";
+            this.Hit2.UseVisualStyleBackColor = true;
+            this.Hit2.Click += new System.EventHandler(this.Hit2_Click);
+            // 
+            // Wisp2
+            // 
+            this.Wisp2.BackColor = System.Drawing.Color.Transparent;
+            this.Wisp2.BackgroundImage = global::WillowWoods.Properties.Resources._284011701049211;
+            this.Wisp2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Wisp2.Location = new System.Drawing.Point(19, 360);
+            this.Wisp2.Name = "Wisp2";
+            this.Wisp2.Size = new System.Drawing.Size(98, 85);
+            this.Wisp2.TabIndex = 28;
+            // 
+            // miss2
+            // 
+            this.miss2.BackColor = System.Drawing.Color.Transparent;
+            this.miss2.Font = new System.Drawing.Font("Engravers MT", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.miss2.ForeColor = System.Drawing.SystemColors.Control;
+            this.miss2.Location = new System.Drawing.Point(123, 361);
+            this.miss2.Name = "miss2";
+            this.miss2.Size = new System.Drawing.Size(626, 86);
+            this.miss2.TabIndex = 29;
+            this.miss2.Text = "???:\r\n\r\nYou missed the monster try to hit it again!!";
+            this.miss2.Visible = false;
+            // 
+            // monsterHit2
+            // 
+            this.monsterHit2.BackColor = System.Drawing.Color.Transparent;
+            this.monsterHit2.Font = new System.Drawing.Font("Engravers MT", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.monsterHit2.ForeColor = System.Drawing.SystemColors.Control;
+            this.monsterHit2.Location = new System.Drawing.Point(123, 364);
+            this.monsterHit2.Name = "monsterHit2";
+            this.monsterHit2.Size = new System.Drawing.Size(649, 74);
+            this.monsterHit2.TabIndex = 30;
+            this.monsterHit2.Text = "???:\r\n\r\nYou hit the monster, one more hit should do it!!\r\n";
+            this.monsterHit2.Visible = false;
+            // 
+            // defeat2
+            // 
+            this.defeat2.BackColor = System.Drawing.Color.Transparent;
+            this.defeat2.Font = new System.Drawing.Font("Engravers MT", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.defeat2.ForeColor = System.Drawing.SystemColors.Control;
+            this.defeat2.Location = new System.Drawing.Point(123, 360);
+            this.defeat2.Name = "defeat2";
+            this.defeat2.Size = new System.Drawing.Size(620, 89);
+            this.defeat2.TabIndex = 31;
+            this.defeat2.Text = "???:\r\n\r\nYou defeated the monster, was that the same one as before?\r\n";
+            this.defeat2.Visible = false;
+            // 
+            // monsterContinue2
+            // 
+            this.monsterContinue2.Font = new System.Drawing.Font("Engravers MT", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.monsterContinue2.Location = new System.Drawing.Point(128, 109);
+            this.monsterContinue2.Name = "monsterContinue2";
+            this.monsterContinue2.Size = new System.Drawing.Size(138, 41);
+            this.monsterContinue2.TabIndex = 0;
+            this.monsterContinue2.Text = "Continue";
+            this.monsterContinue2.UseVisualStyleBackColor = true;
+            this.monsterContinue2.Visible = false;
+            // 
+            // monsterReturn
+            // 
+            this.monsterReturn.AutoSize = true;
+            this.monsterReturn.BackColor = System.Drawing.Color.Transparent;
+            this.monsterReturn.Font = new System.Drawing.Font("Engravers MT", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.monsterReturn.ForeColor = System.Drawing.SystemColors.Control;
+            this.monsterReturn.Location = new System.Drawing.Point(123, 369);
+            this.monsterReturn.Name = "monsterReturn";
+            this.monsterReturn.Size = new System.Drawing.Size(573, 51);
+            this.monsterReturn.TabIndex = 32;
+            this.monsterReturn.Text = "???:\r\n\r\nOh no, you picked the wrong door! Get ready.\r\n";
+            // 
             // WillowWoodsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1624,7 +1681,10 @@
             this.Monsterpanel.ResumeLayout(false);
             this.doorPanel.ResumeLayout(false);
             this.doorPanel.PerformLayout();
+            this.MonsterPanel2.ResumeLayout(false);
+            this.MonsterPanel2.PerformLayout();
             this.endingpanel.ResumeLayout(false);
+            this.endingpanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.wispDoorpic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.door1pic)).EndInit();
@@ -1635,6 +1695,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.wisppic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.willowwisppicbox)).EndInit();
+            this.Monster2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1756,6 +1817,15 @@
         private System.Windows.Forms.Label scene4lbl;
         private System.Windows.Forms.Label scene5lbl;
         private System.Windows.Forms.Button nextEndbtn;
+        private System.Windows.Forms.Panel MonsterPanel2;
+        private System.Windows.Forms.Panel Monster2;
+        private System.Windows.Forms.Button monsterContinue2;
+        private System.Windows.Forms.Button Hit2;
+        private System.Windows.Forms.Panel Wisp2;
+        private System.Windows.Forms.Label miss2;
+        private System.Windows.Forms.Label defeat2;
+        private System.Windows.Forms.Label monsterHit2;
+        private System.Windows.Forms.Label monsterReturn;
     }
 }
 

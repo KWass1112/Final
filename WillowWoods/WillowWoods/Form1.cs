@@ -17,7 +17,7 @@ namespace WillowWoods
             InitializeComponent();
         }
 
-      
+
         private void firstNextbtn_Click(object sender, EventArgs e)
         {
             OnceUponlbl.Visible = false;
@@ -36,7 +36,7 @@ namespace WillowWoods
 
         private void continuebtn_Click_1(object sender, EventArgs e)
         {
-            IntroPanel.Visible = true; 
+            IntroPanel.Visible = true;
         }
 
         private void nextOnebtn_Click(object sender, EventArgs e)
@@ -78,9 +78,9 @@ namespace WillowWoods
         {
             next4btn.Visible = false;
             mazePanel.Visible = true;
-        
+
         }
- 
+
         private void Wall_MouseEnter(object sender, EventArgs e)
         {
             Point startPoint = mazePanel.Location;
@@ -150,7 +150,7 @@ namespace WillowWoods
                         wispHit2lbl.Visible = true;
 
                     }
-                    else if ( a == 3)
+                    else if (a == 3)
                     {
                         wispHit1lbl.Visible = false;
                         monsterPic.Visible = false;
@@ -176,8 +176,8 @@ namespace WillowWoods
                         monsterContinuebtn.Visible = true;
                     }
                 }
-                
-                
+
+
             } while (a > 3);
 
         }
@@ -201,6 +201,7 @@ namespace WillowWoods
 
             if (userChoice == 1)
             {
+                Monsterpanel.Visible = true;
                 Monsterpanel.BringToFront();
             }
             else if (userChoice == 2)
@@ -216,7 +217,15 @@ namespace WillowWoods
 
         }
 
-       
+        private void Hit2_Click(object sender, EventArgs e)
+        {
+            a++;
+            int min = 1;
+            int max = 100;
+            int chance;
+            Random ranNumberGenerator = new Random();
+            chance = ranNumberGenerator.Next(min, max);
+        }
     }
      
 }
