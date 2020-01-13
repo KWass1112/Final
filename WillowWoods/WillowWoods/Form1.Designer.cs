@@ -356,6 +356,7 @@
             this.endingpanel.Name = "endingpanel";
             this.endingpanel.Size = new System.Drawing.Size(825, 458);
             this.endingpanel.TabIndex = 25;
+            this.endingpanel.Visible = false;
             // 
             // scene5lbl
             // 
